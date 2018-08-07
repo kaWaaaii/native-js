@@ -39,6 +39,7 @@
 	}
 	obj.logName() 
 }
+
 Параметры по умолчанию
 {
 	const c = 90;
@@ -52,6 +53,7 @@
 
 	console.log(func(30))
 }
+
 Работа с объектами
 {
 	const name = "WFM";
@@ -107,7 +109,6 @@ Rest & Spread
 	longString(29, ...spreadArray)
 }
 
-
 Строки
 {
 	let name = "WFM";
@@ -115,5 +116,22 @@ Rest & Spread
 	let str = `Hello ${name}, glad to see you! ${5+5}`
 
 	console.log(str)
+}
+
+Цикл for of
+{
+	const array = [1,2,3,4,5,6,65];
+
+	// array.forEach(function(item){
+	// 	console.log(item)
+	// })
+
+	// for (let item of array) {
+	// 	console.log("item: ", item)
+	// }
+
+	for (let item of 'ABCDFG') {
+		console.log("item: ", item)
+	}
 }
 */
