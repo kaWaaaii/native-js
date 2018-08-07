@@ -107,4 +107,13 @@ Rest & Spread
 	longString(29, ...spreadArray)
 }
 
+
+Строки
+{
+	let name = "WFM";
+
+	let str = `Hello ${name}, glad to see you! ${5+5}`
+
+	console.log(str)
+}
 */
