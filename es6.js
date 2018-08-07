@@ -161,4 +161,23 @@ Rest & Spread
 	let bmw = new BMW('x6');
 	bmw.logName();
 }
+
+Псевдо массивы Set/WeakSet
+
+let set = new Set().add(2).add(3);
+
+console.log('Set size: ', set.size)
+console.log('Set has: ', set.has(3))
+console.log('Set has: ', set.delete(3))
+console.log('Set size: ', set.size)
+console.log('Set clear: ', set.clear(3))
+console.log('Set size: ', set.size)
+
+let set1 = new WeakSet();
+let key = {};
+set1.add(key);
+console.log(set1.size)
+key = null
+console.log(set1.size)
+
 */
