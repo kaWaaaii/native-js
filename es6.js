@@ -77,4 +77,23 @@
 	console.log(person)
 }
 
+Деструктуризация объекта:
+{
+	let obj = {
+		name: 'WFM',
+		age: 12
+	}
+
+	let {name: n, age: a} = obj;
+
+	console.log(n, a)
+
+	Деструктуризация массива:
+	let array = ['MFU', 30, 'red'];
+
+	let [name, , color] = array;
+
+	console.log(name, ,color);
+}
+
 */
