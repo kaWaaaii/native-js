@@ -96,4 +96,15 @@
 	console.log(name, ,color);
 }
 
+Rest & Spread
+{
+	//rest
+	function longString(num, ...args) {
+		console.log(num, args)
+	}
+	//spread
+	let spreadArray = ["WFM", "WFM2", "WFM3"];
+	longString(29, ...spreadArray)
+}
+
 */
