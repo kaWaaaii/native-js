@@ -163,21 +163,57 @@ Rest & Spread
 }
 
 Псевдо массивы Set/WeakSet
+{
+	let set = new Set().add(2).add(3);
 
-let set = new Set().add(2).add(3);
+	console.log('Set size: ', set.size)
+	console.log('Set has: ', set.has(3))
+	console.log('Set has: ', set.delete(3))
+	console.log('Set size: ', set.size)
+	console.log('Set clear: ', set.clear(3))
+	console.log('Set size: ', set.size)
 
-console.log('Set size: ', set.size)
-console.log('Set has: ', set.has(3))
-console.log('Set has: ', set.delete(3))
-console.log('Set size: ', set.size)
-console.log('Set clear: ', set.clear(3))
-console.log('Set size: ', set.size)
+	let set1 = new WeakSet();
+	let key = {};
+	set1.add(key);
+	console.log(set1.size)
+	key = null
+	console.log(set1.size)
+}
 
-let set1 = new WeakSet();
-let key = {};
-set1.add(key);
-console.log(set1.size)
-key = null
-console.log(set1.size)
+Псевдо объекты
+{
+	let map = new Map();
 
+	map.set('name', 'WFM');
+	map.set('age', 22);
+
+	let obj1 = {};
+	let obj2 = {};
+
+	map.set(obj1, 10);
+	map.set(obj2, 50);
+
+	console.log('size', map.size)
+	console.log('Has', map.has(obj2))
+	console.log('Delete', map.delete(obj2))
+	console.log('size', map.size)
+	console.log('Has', map.has(obj2))
+
+	let map = new Map([
+		['name', 'wfm'],
+		['age', 20]
+	])
+
+	for (let entr of map.entries()) {
+		console.log(`${entr[0]} - ${entr[1]}`)
+	}
+
+	let map = new WeakMap();
+	let key = {};
+	map.set(key, "key");
+	console.log('Size: ', map.size)
+	key = null
+	console.log('Size: ', map.size)
+}
 */
