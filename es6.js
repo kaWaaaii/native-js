@@ -277,4 +277,27 @@ Rest & Spread
 		console.log(n)
 	}
 }
+
+Новые методы
+{
+	//Метод у объектов
+	// let obj1 = {a: 1};
+	// let obj2 = {b: 2, c: 3};
+
+	// let obj3 = Object.assign({}, obj1, obj2);
+
+	// console.log(obj1)
+	// console.log(obj2)
+	// console.log(obj3)
+
+	//Метод у массива
+	// let findedItem = [1,2,3,4].find(x => x > 3);
+	// console.log(findedItem)
+
+	let str = 'Hello';
+
+	console.log('Repeat: ', str.repeat(3)) //повторяет
+	console.log('StartsWith: ', str.startsWith('Hel')) 
+	console.log('Includes: ', str.includes('Hel')) //есть ли это значение в строке
+}
 */
