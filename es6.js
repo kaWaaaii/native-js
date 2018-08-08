@@ -300,4 +300,29 @@ Rest & Spread
 	console.log('StartsWith: ', str.startsWith('Hel')) 
 	console.log('Includes: ', str.includes('Hel')) //есть ли это значение в строке
 }
+
+Promise - end
+{
+	// function oldDelay(ms, func) {
+	// 	setTimeout(function(){
+	// 		func();
+	// 	}, ms)
+	// }
+
+	function delay(ms = 1000) {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				reject()
+			}, ms)
+		});
+	}
+
+	delay(4000)
+		.then(() => {
+			console.log('new delay passed');
+		})
+		.catch(() => {
+			console.info('error')
+		})
+}
 */
