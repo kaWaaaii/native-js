@@ -216,4 +216,14 @@ Rest & Spread
 	key = null
 	console.log('Size: ', map.size)
 }
+
+Импорт/Экспорт
+{
+	import {name, age} from './extra.js'
+
+	import func from './extra.js'
+
+	console.log(name, age)
+	func();
+}
 */
