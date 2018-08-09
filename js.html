@@ -17,26 +17,63 @@
     </style>
 </head>
 <body>
-	<div id="blueRect">
-	</div>
+	<!-- <div id="blueRect">
+	</div> -->
+	<form name="search">
+		<input type="text" name="key" placeholder="Введите ключ"></input>
+		<input type="button" name="print" value="Отправить">
+	</form>
+	<div id="printBlock"></div>
 	<script>
-		function setColor(e){
-			if(e.type === "mouseover"){
-				e.target.style.backgroundColor = "red"
-			} else if (e.type === "mouseout") {
-				e.target.style.backgroundColor = "blue"
-			}
+		{
+			// function setColor(e){
+			// 	if(e.type === "mouseover"){
+			// 		e.target.style.backgroundColor = "red"
+			// 	} else if (e.type === "mouseout") {
+			// 		e.target.style.backgroundColor = "blue"
+			// 	}
+			// }
+			// let blueRect = document.getElementById("blueRect")
+			// blueRect.addEventListener("mouseover", setColor)
+			// blueRect.addEventListener("mouseout", setColor)
+			// function handleClick(e){
+			// 	console.log("screenX: " + e.screenX);
+			// 	console.log("screenY: " + e.screenY);
+			// 	console.log("clientX: " + e.clientX);
+			// 	console.log("clientY: " + e.clientY);
+			// }
+			// blueRect.addEventListener("click", handleClick)
 		}
-		let blueRect = document.getElementById("blueRect")
-		blueRect.addEventListener("mouseover", setColor)
-		blueRect.addEventListener("mouseout", setColor)
-		function handleClick(e){
-			console.log("screenX: " + e.screenX);
-			console.log("screenY: " + e.screenY);
-			console.log("clientX: " + e.clientX);
-			console.log("clientY: " + e.clientY);
+
+		{
+			// let keyBox = document.search.key;
+		
+			// 	//Обработчик изменения текста
+			// 	function onchange(e) {
+			// 		// получаем значение поля key
+			// 		let printBlock = document.getElementById("printBlock");
+			// 		let val = e.target.value;
+			// 		printBlock.textContent = val;
+			// 	}
+			// 	function onblur(e) {
+			// 		// получаем его значение и обрезаем все пробелы
+			// 		let text = keyBox.value.trim()
+			// 		if(text === "") {
+			// 			keyBox.style.borderColor = "red";
+			// 		} else {
+			// 			keyBox.style.borderColor = "green"
+			// 		}
+			// 	}
+			// 	//получение фокуса
+			// 	function onfocus(e) {
+			// 		keyBox.style.borderColor = "blue";
+			// 	}
+		
+			// 	keyBox.addEventListener("change", onchange);
+			// 	keyBox.addEventListener("blur", onblur);
+			// 	keyBox.addEventListener("focus", onfocus);
 		}
-		blueRect.addEventListener("click", handleClick)
+
 	</script>
 </body>
 </html>
