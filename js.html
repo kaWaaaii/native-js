@@ -19,8 +19,17 @@
 <body>
 	<!-- <div id="blueRect">
 	</div> -->
-	<form name="search">
-		<input type="checkbox" name="enabled" checked><span>Включить</span>
+	<form name="myForm">
+	    <select name="language" size="4">
+	        <option value="JS" selected="selected">JavaScript</option>
+	        <option value="Java">Java</option>
+	        <option value="CS">C#</option>
+	        <option value="CPP">C++</option>
+	    </select>
+	        <p><input type="text" name="textInput" placeholder="Введите текст" /></p>
+		    <p><input type="text" name="valueInput" placeholder="Введите значение" /></p>
+		    <p><input type="button" name="addButton" value="Добавить" /><input type="button" name="removeButton" value="Удалить" /></p>
+
 	</form>
 	<div id="printBlock"></div>
 	<script>
@@ -112,6 +121,35 @@
 		}
 
 		
+		{
+			// let firstLang = myForm.language.options[0];
+			// document.write("Index: " + firstLang.index + "<br/>")
+			// document.write("Text: " + firstLang.text + "<br/>")
+			// document.write("Value: " + firstLang.value + "<br/>")
+
+			// let addButton =myForm.addButton;
+			// let removeButton = myForm.removeButton
+			// let languageSelect = myForm.language;
+			// //Обработчик добавления элемента
+			// function addOption() {
+			// 	//получаем текст для элемента
+			// 	let text = myForm.textInput.value;
+			// 	//получаем значение дял элемента
+			// 	let value = myForm.valueInput.value;
+			// 	//создаем новый элемент
+			// 	let newOption = new Option(text, value);
+			// 	languageSelect.options[languageSelect.options.length]=newOption
+			// }
+
+			// let removeOption = () => {
+			// 	let selectedIndex = languageSelect.options.selectedIndex;
+			// 	//удаляем элемент
+			// 	languageSelect.options[selectedIndex] = null
+			// }
+
+			// addButton.addEventListener("click", addOption);
+			// removeButton.addEventListener("click", removeOption);
+		}
 	</script>
 </body>
 </html>
