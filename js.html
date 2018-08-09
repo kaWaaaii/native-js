@@ -20,8 +20,7 @@
 	<!-- <div id="blueRect">
 	</div> -->
 	<form name="search">
-		<input type="text" name="key" placeholder="Введите ключ"></input>
-		<input type="button" name="print" value="Отправить">
+		<textarea rows="7" cols="40" name="message"></textarea>
 	</form>
 	<div id="printBlock"></div>
 	<script>
@@ -74,6 +73,31 @@
 			// 	keyBox.addEventListener("focus", onfocus);
 		}
 
+		{
+			// let message = document.search.message;
+
+			// //обработчик ввода символов
+			// let onkeypress = (e) => {
+			// 	//получаем элемент printBLock
+			// 	let printBlock = document.getElementById("printBlock")
+			// 	//получаем введенный символ
+			// 	let val = String.fromCharCode(e.keyCode);
+			// 	//добавление символа
+			// 	printBlock.textContent += val;
+			// }
+
+			// let onkeydown = (e) => {
+			// 	if (e.keyCode === 8 ) { //если нажат Backspace
+			// 		let printBlock = document.getElementById("printBlock")
+			// 		let length = printBlock.textContent.length
+			// 		// обрезаем строку по последнему символу
+   			//      printBlock.textContent = printBlock.textContent.substring(0, length-1);
+			// 	} 
+			// }
+
+			// message.addEventListener("keypress", onkeypress)
+			// message.addEventListener("keydown", onkeydown)
+		}
 	</script>
 </body>
 </html>
